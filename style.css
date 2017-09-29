@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+    background: black;
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+.flexVert {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 15vh;
+    justify-content: space-around;
+    font-family: 'Orbitron';
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2); 
+}
+
+#xxc {
+    color: #33FF00;
+}
+
+.level, .score {
+    color: white;
+    text-align: center;
+}
