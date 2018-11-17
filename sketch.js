@@ -30,12 +30,16 @@ var difficultyIncrement = 100;
 var fallIncrement = 0.01;
 var spaceInvaders;
 
+function preload() {
+    spaceInvaders = loadSound('sound/spaceinvaders.mp3');
+}
+
 function setup() {
-    spaceInvaders = loadSound('https://s0.vocaroo.com/media/download_temp/Vocaroo_s0T3iDVAaJZO.mp3');
+    spaceInvaders.play();
 //    spaceInvaders = loadSound('sound/spaceinvaders.mp3');
-    laser = loadSound('https://s1.vocaroo.com/media/download_temp/Vocaroo_s1wVAd6vbYvs.mp3');
+    laser = loadSound('sound/shoot.wav');
 //    laser = loadSound('sound/shoot.wav');
-    alienKilled = loadSound('https://s0.vocaroo.com/media/download_temp/Vocaroo_s0RlDnvwEPnN.mp3');
+    alienKilled = loadSound('sound/invaderkilled.wav');
 //    alienKilled = loadSound('sound/invaderkilled.wav');
     vbn = new star();
     spaceship = new ship();
@@ -61,7 +65,6 @@ function setup() {
         }
     }
 }
-
 
 function draw() {
     holdCheck();
